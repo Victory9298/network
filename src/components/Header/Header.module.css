@@ -1,0 +1,33 @@
+.header {
+    grid-area: h;
+    background-color: rgb(151, 151, 163);
+    padding-right: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header img {
+    width: 65px;
+    height: 65px;
+    border: 1px solid rgb(134, 134, 145);
+  }
+
+  .loginBlock {
+    float: right;
+    color: white;
+  }
+
+  .loginBlock a {
+    color: white;
+  }
+  
+  .loginButton {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(151, 151, 163);
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+  }

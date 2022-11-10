@@ -1,0 +1,32 @@
+
+.nav {
+  grid-area: n;
+  background-color: rgb(252, 251, 249);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  list-style: none;
+  border: 1px solid rgb(151, 151, 163);
+}
+
+ul {
+  list-style: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item a{
+  color: rgba(8, 8, 8, 0.549);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item a.active {
+  color: blue;
+}
