@@ -12,4 +12,7 @@
 .app-wrapper-content {
   grid-area: c;
   background-color: whitesmoke;
+  border-right:  1px solid rgb(151, 151, 163);
+  border-bottom:  1px solid rgb(151, 151, 163);
+  border-top:  1px solid rgb(151, 151, 163);
 }

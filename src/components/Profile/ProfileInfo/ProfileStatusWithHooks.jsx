@@ -6,7 +6,7 @@ const ProfileStatusWithHooks = (props) => {
     let [status, setStatus] = useState(props.status);
 
     useEffect(() => {
-        setStatus(props.status);
+        setStatus(`Status:${props.status}`);
     }, []);
 
     const activateEditMode = () => {
@@ -26,7 +26,7 @@ const ProfileStatusWithHooks = (props) => {
         <div>
             { !editMode &&
                 <div>
-                    <span onDoubleClick={activateEditMode}>{props.status || "-------"}</span>
+                    <span onDoubleClick={activateEditMode}>{props.status ? `Status: ${props.status}`: "-------"}</span>
                 </div>
             }
             { editMode &&

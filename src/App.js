@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import { Route } from "react-router-dom";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
-import Settings from "./components/Settings/Settings";
+import Photos from "./components/Photos/Photos";
 // import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
 // import ProfileContainer from './components/Profile/ProfileContainer';
@@ -48,8 +48,8 @@ class App extends Component {
                             render={() => <Music />} />
                         <Route path="/news"
                             render={() => <News />} />
-                        <Route path="/settings"
-                            render={() => <Settings />} />
+                        <Route path="/photos"
+                            render={() => <Photos />} />
                     </div>
                 </div>
             )

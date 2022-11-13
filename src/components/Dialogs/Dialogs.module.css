@@ -19,10 +19,30 @@
 
 .messages {
     padding: 10px;
+    color: black;
 }
 
 .messages .message {
     padding: 10px;
-    color: white;
+    color: black;
 }
+
+.dialogsForm {
+    padding: 10px;
+}
+
+.dialogsButton {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(151, 151, 163);
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+}
+
   

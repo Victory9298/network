@@ -1,8 +1,23 @@
 .userPhoto {
    width: 100px;
-   height: 100px; 
+   height: 80px; 
 }
 
 .selectedPage {
    font-weight: bold;
+}
+
+.userButton {
+   border-radius: 5px;
+   padding: 8px;
+   background-color: rgb(151, 151, 163);
+   color: white;
+   font-weight: bold;
+   border: 1px solid white;
+}
+
+.userCard {
+   border: 1px solid rgb(151, 151, 163);
+   border-radius: 8px;
+   width: 50%;
 }
