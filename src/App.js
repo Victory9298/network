@@ -16,6 +16,7 @@ import { withRouter } from 'react-router-dom';
 import { initializeApp } from './redux/app-reducer'
 import Preloader from './components/common/Preloader/Preloader';
 import { withSuspense } from './hoc/withSuspense';
+import Quiz from './components/Quiz/Quiz';
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
@@ -50,6 +51,8 @@ class App extends Component {
                             render={() => <News />} />
                         <Route path="/photos"
                             render={() => <Photos />} />
+                        <Route path="/quiz"
+                            render={() => <Quiz />} />
                     </div>
                 </div>
             )
