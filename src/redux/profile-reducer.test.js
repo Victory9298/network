@@ -1,5 +1,5 @@
-import profileReducer from "./profile-reducer";
-import { addPostActionCreator, deletePost } from './../redux/profile-reducer';
+import profileReducer from "./profile-reducer.ts";
+import { addPostActionCreator, deletePost } from './../redux/profile-reducer.ts';
 
 let state = {
     posts: [

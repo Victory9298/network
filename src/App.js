@@ -6,19 +6,19 @@ import Music from "./components/Music/Music";
 import News from "./components/News/News";
 import Photos from "./components/Photos/Photos";
 // import DialogsContainer from './components/Dialogs/DialogsContainer';
-import UsersContainer from './components/Users/UsersContainer';
+import UsersContainer from './components/Users/UsersContainer.tsx';
 // import ProfileContainer from './components/Profile/ProfileContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import LoginPage from './components/Login/Login';
 import { connect } from 'react-redux';
 import { compose } from "redux";
 import { withRouter } from 'react-router-dom';
-import { initializeApp } from './redux/app-reducer'
+import { initializeApp } from './redux/app-reducer.ts'
 import Preloader from './components/common/Preloader/Preloader';
 import { withSuspense } from './hoc/withSuspense';
 import Quiz from './components/Quiz/Quiz';
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
-const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
+const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer.tsx'));
 
 class App extends Component {
 
@@ -41,7 +41,7 @@ class App extends Component {
                         <Route path="/dialogs"
                             render={withSuspense(DialogsContainer)}/>
                         <Route path="/users"
-                            render={() => <UsersContainer />} />
+                            render={() => <UsersContainer pageTitle={"Users"}/>} />
                         <Route path="/login"
                             render={() => <LoginPage />} />
 
